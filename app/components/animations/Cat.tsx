@@ -1,0 +1,34 @@
+"use client";
+
+import React from "react";
+import { Alignment, Fit, Layout, useRive } from "@rive-app/react-canvas";
+
+interface LampProps {
+  style?: React.CSSProperties;
+}
+
+const Cat = ({ style }: LampProps) => {
+  const nameMachine = "backCat";
+
+  const { RiveComponent } = useRive({
+    src: "/animations/backcat.riv",
+    autoplay: true,
+    stateMachines: [nameMachine],
+    layout: new Layout({
+      fit: Fit.Cover,
+      alignment: Alignment.Center,
+    }),
+  });
+
+  return (
+    <RiveComponent
+      // role="img"
+      style={{
+        background: "translate",
+        ...style,
+      }}
+    />
+  );
+};
+
+export default Cat;
