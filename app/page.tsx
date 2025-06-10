@@ -1,7 +1,7 @@
 "use client";
 import Cat from "@components/animations/Cat";
 import { ColorSchemeToggle } from "@components/ColorSchemeToggle/ColorSchemeToggle";
-import { Card, Container, Flex, Stack, Transition } from "@mantine/core";
+import { Card, Container, Transition } from "@mantine/core";
 import { useState } from "react";
 
 export default function Home() {

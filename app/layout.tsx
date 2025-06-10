@@ -10,6 +10,7 @@ export const metadata = {
   description: "",
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function RootLayout({ children }: { children: any }) {
   return (
     <html lang="en" {...mantineHtmlProps}>

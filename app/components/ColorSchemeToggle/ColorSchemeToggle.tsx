@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
-import { Button, useMantineColorScheme, useMantineTheme } from "@mantine/core";
+import { Button, useMantineColorScheme } from "@mantine/core";
 import { Dispatch, SetStateAction, useEffect } from "react";
 interface ColorSchemeToggleProps {
   setIsOpenLamp?: Dispatch<SetStateAction<boolean>>;

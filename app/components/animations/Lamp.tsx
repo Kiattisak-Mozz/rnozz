@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 import {
   Alignment,
-  Fit,
   Layout,
   useRive,
   useStateMachineInput,
