@@ -1,6 +1,6 @@
 "use client";
 import Cat from "@components/animations/Cat";
-import Lamp from "@components/animations/Lamp";
+// import Lamp from "@components/animations/Lamp";
 import { ColorSchemeToggle } from "@components/ColorSchemeToggle/ColorSchemeToggle";
 import {
   Burger,
