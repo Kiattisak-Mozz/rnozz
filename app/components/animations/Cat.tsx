@@ -24,7 +24,12 @@ const Cat = ({ style }: LampProps) => {
     <RiveComponent
       // role="img"
       style={{
-        background: "translate",
+        zIndex: 1,
+        // position: "absolute",
+
+        height: "40vh",
+        width: "46vh",
+        // background: "red",
         ...style,
       }}
     />

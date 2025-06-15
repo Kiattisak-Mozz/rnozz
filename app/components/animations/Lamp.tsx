@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import {
   Alignment,
+  Fit,
   Layout,
   useRive,
   useStateMachineInput,
@@ -22,7 +23,7 @@ const Lamp = ({ play = false, style }: LampProps) => {
     autoplay: true,
     stateMachines: [nameMachine],
     layout: new Layout({
-      // fit: Fit.FitHeight,
+      fit: Fit.FitHeight,
       alignment: Alignment.Center,
     }),
   });
@@ -35,7 +36,23 @@ const Lamp = ({ play = false, style }: LampProps) => {
     }
   }, [lightSwitchInput, play]);
 
-  return <RiveComponent style={style} />;
+  return (
+    <RiveComponent
+      style={{
+        zIndex: 1,
+        position: "absolute",
+
+        // top: "50%",
+        // left: "50%",
+        // transform: "translate(-50%, -50%)",
+        // width: "65vw",
+        // height: "100vh",
+        // pointerEvents: "fill",
+        // backgroundColor: "red",
+        ...style,
+      }}
+    />
+  );
 };
 
 export default Lamp;
